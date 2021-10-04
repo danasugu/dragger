@@ -7,3 +7,9 @@ dragit.addEventListener('dragstart', (e) => {
 dragit.addEventListener('dragend', (e) => {
   dragit.style.opacity = '';
 });
+
+boxes.forEach((box) => {
+  box.addEventListener('dragenter', (e) => {
+    e.target.classList.add('red');
+  });
+});
