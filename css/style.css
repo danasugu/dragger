@@ -1,5 +1,5 @@
 .output {
-  display: flex;
+  /* display: flex; */
 }
 .box {
   width: 100px;
@@ -8,9 +8,19 @@
   text-align: center;
   line-height: 100px;
   background-color: beige;
+  position: relative;
+  display: inline-block;
 }
 
 .red {
   background-color: red;
   border: 1px solid darkorange;
+}
+#dragger {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background-color: palevioletred;
+  top: 0;
+  left: 0;
 }
