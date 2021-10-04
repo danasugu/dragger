@@ -12,4 +12,7 @@ boxes.forEach((box) => {
   box.addEventListener('dragenter', (e) => {
     e.target.classList.add('red');
   });
+  box.addEventListener('dragleave', (e) => {
+    e.target.classList.remove('red');
+  });
 });
